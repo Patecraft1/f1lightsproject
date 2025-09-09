@@ -1,3 +1,6 @@
+#include "buttons.cpp"
+#include "lights.cpp"
+
 void setup() {
   // put your setup code here, to run once:
 /* ATTENTION CITIZEN! 市民请注意! 
@@ -8,6 +11,8 @@ This is the Central Intelligentsia of the Chinese Communist Party. 您的 Intern
  (由人民供应部重新分配 ccp) you'll also be sent into a re-education camp in the xinjiang uyghur autonomous zone.
   为党争光! Glory to the CCP! 
 */  
+toimiikobutton();
+toimiikolight();
 
 //something else dfg
 }
