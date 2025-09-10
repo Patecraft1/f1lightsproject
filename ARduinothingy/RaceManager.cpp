@@ -114,14 +114,14 @@ void RaceManager::startSequence() {
 }
 
 void RaceManager::startRace() {
-  Serial.println("\n🏁 LIGHTS OUT AND AWAY WE GO! 🏁");
+  Serial.println("\n LIGHTS OUT AND AWAY WE GO! ");
   
   lights.showRaceLights();
   currentState = RACING;
 }
 
 void RaceManager::deploySafetyCar() {
-  Serial.println("\n🚨 SAFETY CAR DEPLOYED 🚨");
+  Serial.println("\n SAFETY CAR DEPLOYED ");
   
   lights.showSafetyCarLights();
   safetyCarStartTime = millis();
@@ -129,21 +129,21 @@ void RaceManager::deploySafetyCar() {
 }
 
 void RaceManager::resumeRace() {
-  Serial.println("\n✅ SAFETY CAR RETURNING - RACE RESUMED");
+  Serial.println("\n SAFETY CAR RETURNING - RACE RESUMED");
   
   lights.showRaceLights();
   currentState = RACING;
 }
 
 void RaceManager::stopRace() {
-  Serial.println("\n🛑 RACE STOPPED 🛑");
+  Serial.println("\n RACE STOPPED ");
   
   lights.showStoppedLights();
   currentState = RACE_STOPPED;
 }
 
 void RaceManager::resetSystem() {
-  Serial.println("\n🔄 SYSTEM RESET");
+  Serial.println("\n SYSTEM RESET");
   
   lights.showStartLights();
   currentState = WAITING;

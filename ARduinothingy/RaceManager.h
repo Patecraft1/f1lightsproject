@@ -8,7 +8,7 @@
 
 // Race state enumeration
 enum RaceState {
-  WAITING,
+  WAITING,  
   START_SEQUENCE,
   RACING,
   SAFETY_CAR,
