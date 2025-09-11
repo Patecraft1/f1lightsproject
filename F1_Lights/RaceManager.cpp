@@ -118,6 +118,7 @@ void RaceManager::startRace() {
   
   lights.showRaceLights();
   currentState = RACING;
+  raceStartTime = millis(); // Record when the race (green light) started
 }
 
 void RaceManager::deploySafetyCar() {

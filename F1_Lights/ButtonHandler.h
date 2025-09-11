@@ -10,7 +10,7 @@
 const int BUTTON_PIN = 9; // Button for safety car
 
 // Timing constants
-const unsigned long DEBOUNCE_DELAY = 50; // 50ms debounce delay
+const unsigned long DEBOUNCE_DELAY = 50;
 
 class ButtonHandler {
 private:
@@ -21,16 +21,15 @@ private:
 public:
   ButtonHandler();
   
-  // Initialization
   void init();
   
-  // Update button state (call this in loop)
+  // Update button state
   void update();
   
-  // Check if button was pressed (returns true once per press)
+
   bool isPressed();
   
-  // Check current button state (for continuous checking)
+
   bool isCurrentlyPressed();
 };
 

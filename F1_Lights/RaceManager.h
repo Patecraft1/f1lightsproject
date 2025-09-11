@@ -8,7 +8,7 @@
 
 // Race state enumeration
 enum RaceState {
-  WAITING,  
+  WAITING,
   START_SEQUENCE,
   RACING,
   SAFETY_CAR,
@@ -21,6 +21,7 @@ const unsigned long RED_LIGHT_MAX_DELAY = 3000;  // 3 seconds maximum
 const unsigned long START_MIN_DELAY = 2000;      // 2 seconds minimum before start
 const unsigned long START_MAX_DELAY = 5000;      // 5 seconds maximum before start
 const unsigned long SAFETY_CAR_DURATION = 10000; // 10 seconds safety car period
+const unsigned long AUTO_RESTART_DELAY = 5000;   // 5 seconds before auto-restart
 
 class RaceManager {
 private:

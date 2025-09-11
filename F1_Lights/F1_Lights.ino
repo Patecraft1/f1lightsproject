@@ -3,6 +3,14 @@
  * F1 Race Light System
  * 
  * This is the main Arduino sketch file that coordinates all components
+ * 
+ * IMPORTANT: Save this as "F1_Lights.ino" and create the other files as:
+ * - LightController.h
+ * - LightController.cpp  
+ * - ButtonHandler.h
+ * - ButtonHandler.cpp
+ * - RaceManager.h
+ * - RaceManager.cpp
  */
 
 #include "LightController.h"
@@ -23,8 +31,9 @@ void setup() {
   race.init();
   
   Serial.println("F1 Race Light System Ready!");
-  Serial.println("Press any key in Serial Monitor to start sequence");
+  Serial.println("Press any key in Serial Monitor to start first sequence");
   Serial.println("Press button for safety car");
+  Serial.println("System will auto-restart every 5 seconds after race start");
 }
 
 void loop() {
